@@ -1,0 +1,302 @@
+// ************** All product information Part Start **************_____
+
+#all_product {
+    padding-bottom: 70px;
+    .container {
+        .all_product_left {
+
+            .cat_bottom{
+                margin-top: 55px;
+            }
+            .categories {
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -25px;
+                    width: 100%;
+                    height: 1px;
+                    background: #BDBDBD;
+                }
+
+
+
+
+                h5 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16.09px;
+                    line-height: 24px;
+                    color: #003F62;
+
+                    span {
+                        float: right;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15.09px;
+                        line-height: 23px;
+                        color: #595959;
+
+                    }
+                }
+
+                .all_categories_info {
+                    margin-top: 20px;
+                    .form_checks {
+                        margin: 11px 0;
+
+                        label {
+                            display: block;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16.09px;
+                            line-height: 24px;
+                            color: #222222;
+
+                            span {
+                                float: right;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16.09px;
+                                line-height: 24px;
+                                color: #222222;
+
+                            }
+                        }
+
+                        .form-check-input:checked {
+                            background-color: #000;
+                            border-color: #000;
+                        }
+
+                        .form-check-input:focus {
+                            border-color: #86b7fe;
+                            outline: 0;
+                            box-shadow: 0 0 0 0;
+                        }
+
+                        .form-check-input {
+                            width: 1em;
+                            height: 1em;
+                            margin-top: .25em;
+                            vertical-align: top;
+                            background-color: #B3D4E5;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            border: 1px solid rgba(0, 0, 0, .25);
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -webkit-print-color-adjust: exact;
+                            color-adjust: exact;
+                        }
+                    }
+                }
+
+
+
+                .head{
+                    h3{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16.09px;
+                        line-height: 24px;
+                        color: #003F62;
+                    }
+                }
+
+                .avaliability{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16.09px;
+                    line-height: 24px;
+                    color: #303030;
+                    margin-top: 15px;
+
+                    span{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15.09px;
+                        line-height: 23px;
+                        color: #595959;
+                    }
+                }
+            }
+        }
+
+
+
+        .all_popular_product {
+            height: 273.83px;
+            padding: 20px 20px;
+            border: 0.983537px solid #B6B6B6;
+            border-radius: 19.6707px;
+            
+
+            .heart_icon{
+                position: relative;
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background: #B3D4E5;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+
+                    position: absolute;
+                    left: 195px;
+                }
+            }
+
+            
+            .product_size{
+                width: 200px !important;
+            }
+
+            .popular_product_image {
+                
+                width: 120px;
+
+                .overley_sec{
+                    margin-left: -7px !important;
+                }
+                .overley {
+                    display: flex;
+                    margin-left: -45px;
+                    margin-top: 40px;
+
+                    >a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13.737px;
+                        line-height: 24px;
+                        color: #272727;
+                        padding: 10px 20px;
+                        background: #87BCD9;
+                        border-radius: 19.6707px;
+
+                        i {
+                            font-size: 12px;
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            background: #EDA415;
+                            border-radius: 50%;
+                            color: #fff;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            margin-left: 18px;
+                        }
+
+                        .fa-eye {
+                            color: #272727;
+                            background: none;
+                            position: relative;
+                            left: 20px;
+                        }
+                    }
+
+                    .eye {
+                        position: relative;
+
+                        a {
+                            position: absolute;
+                            left: 20px;
+                            padding: 10px 20px;
+                            background: #87BCD9;
+                            border-radius: 19.6707px;
+                            color: #272727;
+
+                        }
+                    }
+
+                    visibility: hidden;
+                    // transition: all linear .3s;
+                    // -webkit-transition: all linear .3s;
+                    // -moz-transition: all linear .3s;
+                    // -ms-transition: all linear .3s;
+                    // -o-transition: all linear .3s;
+                }
+
+
+            }
+
+            &:hover {
+                .overley {
+                    visibility: visible;
+                    // transform: translateY(-5px);
+                    // -webkit-transform: translateY(-5px);
+                    // -moz-transform: translateY(-5px);
+                    // -ms-transform: translateY(-5px);
+                    // -o-transform: translateY(-5px);
+                }
+
+                .product_info {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .product_info {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17.0939px;
+            line-height: 26px;
+            color: #003F62;
+            margin-top: -79px;
+
+
+            span {
+                display: block;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17.0939px;
+                line-height: 26px;
+                color: #4A4A4A;
+                margin-top: 15px;
+            }
+
+            ul {
+                margin-top: 5px;
+                display: flex;
+
+                li {
+                    margin: 0 3px;
+
+                    i {
+                        color: #ACACAC;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        }
+
+        .break_row{
+            margin-top: 30px;
+        }
+    
+    }
+}
+
+// ************** All product information Part End **************_____

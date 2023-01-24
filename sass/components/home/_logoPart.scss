@@ -1,0 +1,116 @@
+// ************** Logo Part Start **************_____
+
+#logo_part {
+    padding: 10px 0;
+    background: #003F62;
+
+    .container {
+        .logo {
+            width: 95px;
+            line-height: 50px;
+        }
+
+        .search {
+
+            input {
+                width: 98%;
+                height: 40px;
+                outline: none;
+                padding: 0 10px;
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 13px;
+                color: #292D32;
+                margin: 8px 0;
+                border-radius: 18px;
+                border: 1px solid #f1f1f1;
+                background: #ffff;
+                -webkit-border-radius: 18px;
+                -moz-border-radius: 18px;
+                -ms-border-radius: 18px;
+                -o-border-radius: 18px;
+            }
+        }
+
+        .submit {
+            position: relative;
+
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                width: 132px;
+                height: 40px;
+                background: #EDA415;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 18px;
+                -webkit-border-radius: 18px;
+                -moz-border-radius: 18px;
+                -ms-border-radius: 18px;
+                -o-border-radius: 18px;
+                position: absolute;
+                left: 291px;
+                top: -28px;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+
+            }
+        }
+
+        .right_part {
+            margin-top: 15px;
+            ul {
+                justify-content: end;
+                display: flex;
+
+                li {
+                    margin: 0 10px;
+
+                    a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+
+                        i {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .after {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            left: 18px;
+                            bottom: 6px;
+                            height: 9px;
+                            width: 9px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+
+                            background: #EDA415;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+// ************** Logo Part Start **************_____

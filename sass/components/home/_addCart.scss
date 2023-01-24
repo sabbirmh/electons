@@ -1,0 +1,213 @@
+// ************** Add cart Part Start **************_____
+
+#add_to_cart {
+    padding-bottom: 70px;
+
+    .container {
+        .cart_left {
+            height: 421px;
+            padding: 20px 20px;
+            border: 1px solid #B6B6B6;
+            border-radius: 20px;
+
+            .left_image_info {
+                margin-top: 57px;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 21.09px;
+                    line-height: 32px;
+                    color: #003F62;
+
+                    span {
+                        display: block;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17.0939px;
+                        line-height: 26px;
+                        color: #4A4A4A;
+                        margin-top: 10px;
+                    }
+                }
+
+                .rating {
+                    margin-left: -5px;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin: 15px 4px;
+                            color: #ACACAC;
+                        }
+                    }
+                }
+
+                .count {
+                    ul {
+                        display: flex;
+
+                        li {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 22.09px;
+                            line-height: 33px;
+                            color: #EDA415;
+                            width: 62px;
+                            height: 60px;
+                            line-height: 60px;
+                            text-align: center;
+                            margin: 21px 5px;
+                            background: #E2F4FF;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                        }
+                    }
+                }
+
+                .cart {
+                    >a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13.7366px;
+                        line-height: 24px;
+                        color: #272727;
+                        padding: 10px 20px;
+                        background: #87BCD9;
+                        border-radius: 19.6707px;
+
+                        i {
+                            font-size: 12px;
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            background: #EDA415;
+                            border-radius: 50%;
+                            color: #fff;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            margin-left: 18px;
+                        }
+
+                        .fa-eye {
+                            color: #272727;
+                            background: none;
+                            position: relative;
+                            left: 20px;
+                        }
+                    }
+
+                    .eye {
+                        position: relative;
+
+                        a {
+                            position: absolute;
+                            left: 177px;
+                            padding: 10px 20px;
+                            background: #87BCD9;
+                            border-radius: 19.6707px;
+                            color: #272727;
+                            top: -43px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart_right {
+            height: 200px;
+            padding: 46px 20px;
+            border: 0.983537px solid #B6B6B6;
+            border-radius: 19.6707px;
+
+
+            .right_image_info {
+                margin-top: 12px;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17.0939px;
+                    line-height: 26px;
+                    color: #003F62;
+
+
+                    span {
+                        display: block;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17.0939px;
+                        line-height: 26px;
+                        color: #4A4A4A;
+                        margin-top: 10px;
+                    }
+                }
+
+                .rating {
+                    margin-left: -5px;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin: 8px 4px;
+                            color: #ACACAC;
+                        }
+                    }
+                }
+            }
+        }
+
+        .break_right {
+            margin-top: 20px;
+        }
+
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 47%;
+        bottom: 27px;
+        transform: translateX(-50%);
+
+        li {
+            button {
+                font-size: 0;
+                width: 16px;
+                height: 15px;
+                border: 1px solid #ADADAD;
+                background: transparent;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background: #EDA415;
+        border-color: #EDA415;
+    }
+
+
+}
+
+
+
+// ************** Add cart Part Start **************_____

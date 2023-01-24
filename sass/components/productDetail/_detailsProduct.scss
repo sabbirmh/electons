@@ -1,0 +1,650 @@
+// ************** Product detail Part Start **************_____
+#product_detail {
+    padding-bottom: 50px;
+
+    .container {
+        .second_row {
+            margin-top: 30px;
+        }
+
+        .zoom_text {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 29.6765px;
+                line-height: 45px;
+                color: #003F62;
+
+                span {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 29.6765px;
+                    line-height: 45px;
+                    display: block;
+                    color: #4A4A4A;
+                    margin-top: 5px;
+                }
+            }
+
+            .review {
+                a {
+                    color: #D4A80A;
+                    font-size: 22px;
+                    margin-top: 2px;
+                }
+
+                .no_review {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15.1922px;
+                    line-height: 20px;
+                    color: #4A4A4A;
+                    margin-left: 10px;
+                }
+            }
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.1725px;
+                line-height: 27px;
+                color: #232323;
+                margin-top: 10px;
+
+                span {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18.1725px;
+                    line-height: 27px;
+                    color: #30BD57;
+                    margin-left: 11px;
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .left {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15.9276px;
+                line-height: 24px;
+                color: #5D5D5D;
+                margin-top: 10px;
+            }
+
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -21px;
+                width: 100%;
+                height: 1px;
+                background: #BDBDBD;
+            }
+        }
+
+        .color_select {
+            margin-top: 41px;
+            display: flex;
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.1725px;
+                line-height: 27px;
+                color: #232323;
+            }
+
+
+            $colors: (red: #D0EC48,
+                green: #565656);
+
+
+            input[type="radio"] {
+                display: none;
+
+                &:checked+label {
+                    span {
+                        transform: scale(1.25);
+                    }
+
+                    @each $name,
+                    $value in $colors {
+                        .#{$name} {
+                            border: 2px solid darken($value, 25%);
+                        }
+                    }
+
+                    // !@each
+                }
+
+                // !&:checked + label
+            }
+
+            label {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    span {
+                        transform: scale(1.25);
+                    }
+                }
+
+                span {
+                    margin-left: 10px;
+                    margin-top: 3px;
+                    display: block;
+                    width: 90%;
+                    height: 90%;
+                    transition: transform 0.2s ease-in-out;
+
+                    @each $name,
+                    $value in $colors {
+                        &.#{$name} {
+                            background: $value;
+                        }
+                    }
+
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+
+            input[type="radio"]:checked+label .green {
+                border: 2px solid #AFAFAF;
+            }
+
+            input[type="radio"]:checked+label .red {
+                border: 2px solid #afafaf;
+            }
+        }
+
+
+        .product_size {
+            margin-top: 25px;
+
+            ul {
+                li {
+                    margin: 0 5px;
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18.1725px;
+                        line-height: 27px;
+                        color: #232323;
+                        margin-top: 5px;
+                    }
+
+                    a {
+                        padding: 6px 20px;
+                        background: #EEEEEE;
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18.1725px;
+                        line-height: 27px;
+                        color: #434343;
+
+
+                        &:hover {
+                            border: 1px solid #0000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .quantity_part {
+            margin-top: 12px;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.1725px;
+                line-height: 27px;
+                color: #232323;
+                margin-top: 20px;
+            }
+
+            $black: #000;
+            $white: #fff;
+            $gray: #ccc;
+            $smoke: #e2e2e2;
+            $disable: #f2f2f2;
+            display: flex;
+
+            .qty-input {
+                color: $black;
+                background: $white;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                .product-qty,
+                .qty-count {
+                    background: transparent;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14.1725px;
+                    line-height: 27px;
+
+                    color: #434343;
+                    border: none;
+                    display: inline-block;
+                    min-width: 0;
+                    height: 2.5rem;
+                    line-height: 1;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .product-qty {
+                    width: 50px;
+                    min-width: 0;
+                    display: inline-block;
+                    text-align: center;
+                    appearance: textfield;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        appearance: none;
+                        margin: 0;
+                    }
+                }
+
+                .qty-count {
+                    padding: 0;
+                    cursor: pointer;
+                    width: 2.5rem;
+                    font-size: 1.25em;
+                    text-indent: -100px;
+                    overflow: hidden;
+                    position: relative;
+
+                    &:before,
+                    &:after {
+                        content: "";
+                        height: 2px;
+                        width: 10px;
+                        position: absolute;
+                        display: block;
+                        background: $black;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+
+                    &--minus {
+                        border-right: 1px solid $smoke;
+                    }
+
+                    &--add {
+                        border-left: 1px solid $smoke;
+
+                        &:after {
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                    &:disabled {
+                        color: $gray;
+                        background: $disable;
+                        cursor: not-allowed;
+                        border-color: transparent;
+
+                        &:before,
+                        &:after {
+                            background: $gray;
+                        }
+                    }
+                }
+            }
+
+            // IGNORE
+            body {
+                background: #3b70fc;
+                display: flex;
+                flex-direction: column;
+                font-size: 1rem;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .qty-input {
+                border-radius: 4px;
+                box-shadow: 0 1em 2em -0.9em rgba(#000, 0.7);
+                transform: scale(1.5);
+            }
+
+        }
+
+        .quantity_part .qty-input {
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
+            box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            width: 135px;
+            height: 28px;
+            background: #EEEEEE;
+
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .submit {
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 25px 7px;
+                    position: relative;
+                    outline: none;
+                    text-decoration: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    height: 50px;
+                    width: 145px;
+                    opacity: 1;
+                    background-color: #ffffff;
+                    border: 1px solid #316887;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+
+                    a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #316887;
+
+
+                    }
+
+                    &:hover {
+                        animation: rotate 0.7s ease-in-out both;
+
+                        a {
+                            animation: storm 0.7s ease-in-out both;
+                            animation-delay: 0.06s;
+
+                            
+                            color: #ffffff;
+                        }
+                        background: #EDA415;
+                        border: 1px solid #EDA415;
+                    }
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+
+                    25% {
+                        transform: rotate(3deg) translate3d(0, 0, 0);
+                    }
+
+                    50% {
+                        transform: rotate(-3deg) translate3d(0, 0, 0);
+                    }
+
+                    75% {
+                        transform: rotate(1deg) translate3d(0, 0, 0);
+                    }
+
+                    100% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+                }
+
+                @keyframes storm {
+                    0% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+
+                    25% {
+                        transform: translate3d(4px, 0, 0) translateZ(0);
+                    }
+
+                    50% {
+                        transform: translate3d(-3px, 0, 0) translateZ(0);
+                    }
+
+                    75% {
+                        transform: translate3d(2px, 0, 0) translateZ(0);
+                    }
+
+                    100% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+                }
+            }
+
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 11px;
+                width: 100%;
+                height: 1px;
+                background: #BDBDBD;
+            }
+        }
+
+
+        .product_category_last{
+            p{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.1725px;
+                line-height: 27px;
+                color: #232323;
+
+                span{
+                    margin-left: 20px;
+                }
+                
+            }
+
+            .cate{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.1725px;
+                line-height: 27px;
+                color: #232323;
+                margin-top: 25px;
+
+                span{
+                    margin-left: 20px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16.1725px;
+                    line-height: 27px;
+                    color: #afafaf;
+                }
+            }
+
+            .share{
+                display: flex;
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18.1725px;
+                    line-height: 27px;
+                    color: #232323;
+                    margin-top: 25px;
+                }
+                
+                ul{
+                    display: flex;
+                    li{
+                        margin: 26px 10px;
+                        a{
+                            color: #afafaf;
+                        }
+                    }
+                }
+            }
+        }
+
+        .confirms_submit{
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 25px 7px;
+                    position: relative;
+                    outline: none;
+                    text-decoration: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    height: 50px;
+                    width: 145px;
+                    opacity: 1;
+                    background-color: #ffffff;
+                    border: 1px solid #316887;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+
+                    a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #316887;
+
+
+                    }
+
+                    &:hover {
+                        animation: rotate 0.7s ease-in-out both;
+
+                        a {
+                            animation: storm 0.7s ease-in-out both;
+                            animation-delay: 0.06s;
+
+                            
+                            color: #ffffff;
+                        }
+                        background: #003F62;
+                        border: 1px solid #003F62;
+                    }
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+
+                    25% {
+                        transform: rotate(3deg) translate3d(0, 0, 0);
+                    }
+
+                    50% {
+                        transform: rotate(-3deg) translate3d(0, 0, 0);
+                    }
+
+                    75% {
+                        transform: rotate(1deg) translate3d(0, 0, 0);
+                    }
+
+                    100% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+                }
+
+                @keyframes storm {
+                    0% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+
+                    25% {
+                        transform: translate3d(4px, 0, 0) translateZ(0);
+                    }
+
+                    50% {
+                        transform: translate3d(-3px, 0, 0) translateZ(0);
+                    }
+
+                    75% {
+                        transform: translate3d(2px, 0, 0) translateZ(0);
+                    }
+
+                    100% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ************** Product detail Part End **************_____

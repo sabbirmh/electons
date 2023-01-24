@@ -1,0 +1,102 @@
+// ************** Comment Part Start **************_____
+
+body {
+    overflow-x: hidden;
+}
+
+#comment{
+    padding-bottom: 90px;
+
+    .container{
+        .comment_part{
+            height: 220px;
+            width: 100%;
+            padding: 15px 15px;
+            border: 1px solid #BABABA;
+            border-radius: 20px;
+
+
+            .commnet_all_info{
+                display: flex;
+
+                .comment_image{
+                    width: 80px;
+                }
+    
+                
+    
+                .img_info{
+                    margin-top: 30px;
+                    margin-left: 20px;
+    
+                    p{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15.9785px;
+                        line-height: 24px;
+                        color: #003F62;
+                    }
+                }
+            }
+
+            .comment_content{
+                position: fixed;
+                width: 331.4px;
+                height: 82.26px;
+                background: #E2F4FF;
+                border-radius: 18.695px;
+                padding: 10px 10px;
+                margin-top: 20px;
+
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11.1707px;
+                    line-height: 20px;
+                    color: #003F62;
+                }
+            }
+        }
+
+        .comment_slider{
+            .slick-slide{
+                padding: 0 12px;
+            }
+        }
+
+        
+        
+    }
+
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 95%;
+        bottom: -43px;
+        transform: translateX(-50%);
+
+        li {
+            button {
+                font-size: 0;
+                width: 16px;
+                height: 15px;
+                border: 1px solid #ADADAD;
+                background: transparent;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background: #EDA415;
+        border-color: #EDA415;
+    }
+   
+}
+// ************** Comment Part End **************_____

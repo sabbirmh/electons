@@ -1,0 +1,103 @@
+// ************** Categories Part Start **************_____
+#categories {
+    padding-bottom: 90px;
+
+    .container {
+        .categories_part {
+            height: 122px;
+            width: 100%;
+            border: 1px solid #A5A5A5;
+            border-radius: 20px;
+            padding: 20px 5px;
+
+            .categories_image {
+                position: relative;
+                left: 84px;
+                top: 41px;
+                transform: translate(-50%, -50%);
+                width: 135px;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+            }
+
+            .size {
+                width: 100px;
+            }
+
+            .categories_info {
+                margin-top: 10px;
+
+                p {
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18.38px;
+                    line-height: 35px;
+                    color: #1B5A7D;
+
+                    span {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18.8462px;
+                        line-height: 28px;
+
+                        color: #265F7F;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .cate_slider {
+            .slick-slide {
+                padding: 0 12px;
+               
+            }
+        }
+
+        .prv_arr,
+        .nxt_arr {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .prv_arr {
+            font-size: 15px;
+            top: 36%;
+            left: -7px;
+            width: 40px;
+            height: 40px;
+            background: #f1f1f1;
+            line-height: 40px;
+            border-radius: 50%;
+
+            align-items: center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        .nxt_arr {
+            font-size: 15px;
+            top: 36%;
+            left: 97.4%;
+            width: 40px;
+            height: 40px;
+            background: #f1f1f1;
+            line-height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+}
+
+// ************** Categories Part End **************_____

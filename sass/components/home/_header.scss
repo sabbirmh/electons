@@ -1,0 +1,39 @@
+
+
+// **************Header Part Start***************_____
+
+#header_part {
+    padding: 20px 0;
+    .container {
+        .header_left {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                color: #292D32;
+
+            }
+        }
+
+        .header_right{
+            
+            a{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #292D32;
+                margin: 0 10px;
+
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// **************Header Part End***************_____

@@ -1,0 +1,491 @@
+// ************** product cart Part Start **************_____
+
+#product_cart_part {
+    padding-bottom: 70px;
+
+    .container {
+        .product_cart_table {
+            padding: 10px 10px;
+            background: #E2F4FF;
+
+            .head {
+
+                h3 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18.68px;
+                    line-height: 31px;
+                    color: #232323;
+                }
+            }
+        }
+
+        .table_info {
+
+
+            margin: 40px 0;
+
+            .product_table_image {
+                display: flex;
+
+                .all {
+                    width: 105px;
+                }
+
+                .image_text_info {
+                    margin-left: 20px;
+
+                    h3 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14.68px;
+                        line-height: 31px;
+                        color: #003F62;
+                    }
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14.68px;
+                        line-height: 31px;
+                        color: #2F2F2F;
+                    }
+                }
+            }
+
+            .price {
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20.68px;
+                    line-height: 34px;
+                    color: #2F2F2F;
+                    margin-top: 32px;
+                }
+            }
+
+
+
+
+            .table_quantity_part {
+                margin-top: 35px;
+                margin-left: 33px;
+
+                $black: #000;
+                $white: #fff;
+                $gray: #ccc;
+                $smoke: #e2e2e2;
+                $disable: #f2f2f2;
+
+                .qty-input {
+                    color: $black;
+                    background: $white;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .product-qty,
+                    .qty-count {
+                        background: transparent;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14.1725px;
+                        line-height: 27px;
+
+                        color: #434343;
+                        border: none;
+                        display: inline-block;
+                        min-width: 0;
+                        height: 2.5rem;
+                        line-height: 1;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .product-qty {
+                        width: 50px;
+                        min-width: 0;
+                        display: inline-block;
+                        text-align: center;
+                        appearance: textfield;
+
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            appearance: none;
+                            margin: 0;
+                        }
+                    }
+
+                    .qty-count {
+                        padding: 0;
+                        cursor: pointer;
+                        width: 2.5rem;
+                        font-size: 1.25em;
+                        text-indent: -100px;
+                        overflow: hidden;
+                        position: relative;
+
+                        &:before,
+                        &:after {
+                            content: "";
+                            height: 2px;
+                            width: 10px;
+                            position: absolute;
+                            display: block;
+                            background: $black;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+
+                        &--minus {
+                            border-right: 1px solid $smoke;
+                        }
+
+                        &--add {
+                            border-left: 1px solid $smoke;
+
+                            &:after {
+                                transform: rotate(90deg);
+                            }
+                        }
+
+                        &:disabled {
+                            color: $gray;
+                            background: $disable;
+                            cursor: not-allowed;
+                            border-color: transparent;
+
+                            &:before,
+                            &:after {
+                                background: $gray;
+                            }
+                        }
+                    }
+                }
+
+                // IGNORE
+                body {
+                    background: #3b70fc;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+
+                .qty-input {
+                    border-radius: 4px;
+                    box-shadow: 0 1em 2em -0.9em rgba(#000, 0.7);
+                    transform: scale(1.5);
+                }
+
+            }
+
+
+
+            .Subtotal {
+                margin-top: 30px;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20.68px;
+                    line-height: 34px;
+                    color: #2F2F2F;
+
+                    // display: block;
+
+                    span {
+                        float: right;
+
+                        a {
+                            color: #232323;
+
+                            i {
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                line-height: 30px;
+                                border: 1px solid #232323;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -19px;
+                width: 100%;
+                height: 1px;
+                background: #232323;
+            }
+
+        }
+
+        .table_info .table_quantity_part .qty-input {
+            color: #000;
+            background: #F2F2F2;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100px;
+            height: 25px;
+            border: 1 px solid #0000;
+        }
+
+
+        .submit {
+            a {
+                margin: 35px 28px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18.697px;
+                line-height: 34px;
+                color: #797979;
+                padding: 10px 25px;
+                border: 1px solid #A9A9A9;
+                border-radius: 32.4242px;
+                -webkit-border-radius: 32.4242px;
+                -moz-border-radius: 32.4242px;
+                -ms-border-radius: 32.4242px;
+                -o-border-radius: 32.4242px;
+
+                transition: all linear .3s;
+                -webkit-transition: all linear .3s;
+                -moz-transition: all linear .3s;
+                -ms-transition: all linear .3s;
+                -o-transition: all linear .3s;
+
+                &:hover {
+                    color: #ffff;
+                    background: #EDA415;
+                }
+            }
+
+
+            .clear {
+                color: #C33131;
+                border: 1px solid #C33131;
+                border-radius: 32.4242px;
+                -webkit-border-radius: 32.4242px;
+                -moz-border-radius: 32.4242px;
+                -ms-border-radius: 32.4242px;
+                -o-border-radius: 32.4242px;
+                transition: all linear .3s;
+                -webkit-transition: all linear .3s;
+                -moz-transition: all linear .3s;
+                -ms-transition: all linear .3s;
+                -o-transition: all linear .3s;
+
+                &:hover {
+                    color: #e2e2e2;
+                    background: #C33131;
+                }
+            }
+        }
+
+        .product_cart_right {
+            width: 100%;
+            height: 450px;
+            border: 1px solid #C3C3C3;
+
+            .head {
+                text-align: center;
+                background: #E2F4FF;
+                padding: 10px 0;
+
+                h3 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20.68px;
+                    line-height: 31px;
+                    color: #232323;
+
+                }
+            }
+        }
+
+        .all_information {
+            padding: 15px 40px;
+
+            .all_total {
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 19.68px;
+                    line-height: 30px;
+                    color: #232323;
+
+                    span {
+                        float: right;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22.68px;
+                        line-height: 34px;
+                        color: #232323;
+                    }
+                }
+
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -25px;
+                    width: 100%;
+                    height: 1px;
+                    background: #AFAFAF;
+                }
+            }
+
+            .cuopn_code {
+                margin-top: 60px;
+                padding: 10px 0;
+                border: 1px solid #DFDFDF;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15.68px;
+                    line-height: 25px;
+                    color: #232323;
+                    margin-left: 15px;
+
+                    span {
+                        float: right;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13.68px;
+                        line-height: 22px;
+                        color: #003F62;
+                        margin-right: 12px;
+
+                    }
+                }
+
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -32px;
+                    width: 100%;
+                    height: 1px;
+                    background: #AFAFAF;
+                }
+            }
+
+
+            .select_desti {
+                margin-top: 50px;
+
+                .select {
+                    width: 100%;
+                    height: 50px;
+                    outline: none;
+                    padding: 0 10px;
+                    font-size: 13px;
+                    color: #232323;
+                    margin: 8px 0;
+                    border: 1px solid #DFDFDF;
+                    background: transparent;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                }
+            }
+
+            .amount {
+                margin-top: 18px;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16.68px;
+                    line-height: 25px;
+                    color: #232323;
+
+                    span {
+                        float: right;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18.68px;
+                        line-height: 28px;
+                        color: #232323;
+
+                    }
+                }
+            }
+
+            .confirm {
+                margin-top: 20px;
+
+                a {
+                    height: 50px;
+                    width: 100%;
+                    line-height: 50px !important;
+                    text-align: center;
+                    background: #EDA415;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18.7px;
+                    line-height: 31px;
+                    color: #FFFFFF;
+                    border-radius: 32.4242px;
+                    -webkit-border-radius: 32.4242px;
+                    -moz-border-radius: 32.4242px;
+                    -ms-border-radius: 32.4242px;
+                    -o-border-radius: 32.4242px;
+                }
+            }
+
+        }
+
+    }
+}
+
+// ************** product cart Part End **************_____

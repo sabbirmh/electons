@@ -1,0 +1,319 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+
+
+
+ /*menu part star */
+
+ .main_menu {
+	background: #e23e38;
+    top: 0px;
+}
+
+.main_menu .navbar-brand {
+	width: 170px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.navbar-toggler:focus {
+	box-shadow: 0 0 0 0;
+}
+
+.main_menu .navbar-brand::before, 
+.main_menu .navbar-brand::after {
+	height: 50px;
+}
+
+.main_menu button i{
+    color: #fff;
+}
+
+.main_menu .navbar-brand img{
+    margin-top: -5px;
+}
+
+.main_menu #navbarSupportedContent{
+    background: #e23e38;
+    text-align: center;
+}
+
+.main_menu ul li a::after {
+	display: none;
+}
+
+
+/*menu part end */
+
+
+
+/*Banner part star */
+
+.banner_item {
+	padding: 110px 0 70px;
+    position: relative;
+}
+
+.banner_text h2::before,
+.banner_text h2::after,
+.banner_text h1::before,
+.banner_text h1::after,
+.banner_text p::before,
+.banner_text p::after {
+	display: none;
+}
+
+.banner_text h2 {
+	font-size: 20px;
+}
+
+.banner_text h1 {
+	font-size: 30px;
+}
+
+.banner_text a {
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+#banner .slick-dots li.slick-active button {
+	width: 15px;
+	height: 15px;
+}
+
+#banner .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	margin: 0 4px;
+}
+
+ /*Banner part end */
+
+
+
+
+/*about part star */
+
+#about {
+	padding: 50px 0;
+}
+
+.about_text p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.about_text p span {
+	padding-top: 10px;
+}
+
+.about_video .overley a {
+	width: 45px;
+	height: 45px;
+	font-size: 20px;
+}
+
+ /*about part end */
+
+
+
+
+
+  /*gallary part star */
+
+  .gal_img:nth-child(2){
+      margin-bottom: 20px;
+  }
+
+ /*gallary part end */
+
+
+
+
+
+ /*Team part star */
+
+ #team {
+	padding: 50px 0;
+}
+
+ .team_img .overley {
+	transform: scale(1);
+}
+
+.team_main {
+	transform: translateY(-42px);
+}
+
+.team_main .team_text p {
+	transform: scale(1);
+}
+
+.team_main.team_text{
+    border-color: #dddddd;
+}
+
+ /*Team part end */
+
+
+
+
+
+
+  /*Testimonial part star */
+
+  .text_slider .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	margin: 4px;
+}
+
+.text_slider .slick-dots li.slick-active button {
+	width: 15px;
+	height: 15px;
+}
+
+ /*Testimonial part end */
+
+
+
+  /*member part start */
+  #membership {
+	padding: 50px 0;
+}
+
+  .member_inner ul {
+	background: #f1f1f1;
+	padding: 20px 0;
+}
+
+  .member_inner h3 {
+	padding: 10px 0;
+}
+
+.member_inner h2 {
+	padding: 20px 0;
+}
+
+.member_inner a {
+	padding: 6px 0;
+}
+
+.member_inner ul li {
+	padding: 5px;
+}
+
+.member_inner{
+	margin-bottom: 20px;
+}
+
+ /*menu part end */
+
+
+
+
+
+  /*counter part star */
+
+
+
+  #counter {
+	padding: 50px 0;
+}
+
+  .counter_text h2 {
+	font-size: 16px;
+}
+
+.counter_text p {
+	font-size: 12px;
+}
+
+
+ /*counter part end */
+
+
+
+
+ /*menu part star */
+
+ .tab_menu li {
+	width: 33.33%;
+}
+
+.tab_menu {
+	height: auto;
+}
+
+
+.tabs_body ul li {
+	width: 48.31%;
+}
+
+.tabs_body ul li:nth-child(even){
+	margin-right: 0;
+}
+
+.tabs_body ul li:nth-child(5){
+	margin-right: 5px;
+}
+
+.tabs_body ul li:nth-child(6),
+.tabs_body ul li:nth-child(7),
+.tabs_body ul li:nth-child(8),
+.tabs_body ul li:nth-child(9),
+.tabs_body ul li:nth-child(10){
+	margin-bottom: 5px;
+}
+
+.tabs_body ul li {
+	padding: 20px 0;
+}
+
+.tabs_body ul li {
+	font-size: 12px;
+}
+
+.tabs_body ul li i {
+	font-size: 30px;
+}
+
+#class_part {
+	padding: 50px 0;
+}
+
+
+.foot_tweet h3 {
+	margin-top: 20px;
+}
+
+ /*menu part end */
+
+
+
+
+
+
+ /*menu part star */
+
+ /*menu part star */
+
+ /*menu part star */
+
+ /*menu part star */
+
+ /*menu part star */
+
+ /*menu part star */
+
+ 
+
+}

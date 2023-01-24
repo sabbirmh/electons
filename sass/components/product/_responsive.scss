@@ -1,0 +1,121 @@
+/* =======******====== responsive Part ======******====== */
+/* =======******====== responsive Part ======******====== */
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    // products  start =================
+
+    #all_product .container .all_popular_product .heart_icon i {
+        left: 160px;
+    }
+
+    #all_product .container .all_popular_product .product_size {
+        margin-left: -10px;
+    }
+
+    #all_product .container .all_popular_product .popular_product_image .overley>a {
+        padding: 10px 13px;
+    }
+
+    #all_product .container .all_popular_product .popular_product_image .overley .eye a {
+        left: 10px;
+    }
+
+    #all_product .container .product_info {
+        font-size: 16.094px;
+      }
+
+    // products  End =================
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    // products  start =================
+
+    #all_product .container .all_popular_product {
+        margin-top: 50px;
+    }
+
+    #all_product .container .all_popular_product .heart_icon i {
+        left: 155px;
+    }
+
+    #all_product .container .all_popular_product .product_size {
+        margin-left: -12px;
+    }
+
+    #all_product .container .all_popular_product .popular_product_image .overley .eye a {
+        left: 3px;
+        padding: 10px 15px;
+    }
+
+    // products  End =================
+}
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    // products  start =================
+
+    #all_product .container .all_popular_product {
+        margin-top: 50px;
+    }
+
+    #all_product .container .all_popular_product .heart_icon i {
+        left: 415px;
+    }
+
+    #all_product .container .all_popular_product .product_size {
+        margin-left: 130px;
+    }
+
+    // products  End =================
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+    // bread crumb  start =================
+
+    #breadcrumb {
+        padding: 25PX 0 25PX;
+    }
+
+    // bread crumb  End =================
+
+
+    // products  start =================
+
+    #all_product .container .all_popular_product {
+        margin-top: 50px;
+    }
+
+    #all_product .container .all_popular_product .heart_icon i {
+        left: 230px;
+    }
+
+    #all_product .container .all_popular_product .product_size {
+        margin-left: 20px;
+    }
+
+    // products  End =================
+
+
+}
+
+
+/* =======******====== responsive Part ======******====== */
+/* =======******====== responsive Part ======******====== */

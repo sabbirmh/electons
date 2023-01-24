@@ -1,0 +1,223 @@
+// ************** Banner Part Start **************_____
+#banner {
+
+    padding: 50px 50px;
+
+    .container {
+        .banner_left {
+            margin-top: 70px;
+            margin-left: 65px;
+
+            h1 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 43px;
+                line-height: 64px;
+
+                color: #1B5A7D;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .submit {
+                float: left;
+                // margin-left: -186px;
+                ul {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        margin: 25px 7px;
+                        position: relative;
+                        outline: none;
+                        text-decoration: none;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        height: 50px;
+                        width: 145px;
+                        opacity: 1;
+                        background-color: #ffffff;
+                        border: 1px solid #316887;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+
+                        a {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #316887;
+
+
+                        }
+
+                        &:hover {
+                            animation: rotate 0.7s ease-in-out both;
+
+                            a {
+                                animation: storm 0.7s ease-in-out both;
+                                animation-delay: 0.06s;
+
+                                
+                                color: #ffffff;
+                            }
+                            background: #EDA415;
+                            border: 1px solid #EDA415;
+                        }
+                    }
+
+                    @keyframes rotate {
+                        0% {
+                            transform: rotate(0deg) translate3d(0, 0, 0);
+                        }
+
+                        25% {
+                            transform: rotate(3deg) translate3d(0, 0, 0);
+                        }
+
+                        50% {
+                            transform: rotate(-3deg) translate3d(0, 0, 0);
+                        }
+
+                        75% {
+                            transform: rotate(1deg) translate3d(0, 0, 0);
+                        }
+
+                        100% {
+                            transform: rotate(0deg) translate3d(0, 0, 0);
+                        }
+                    }
+
+                    @keyframes storm {
+                        0% {
+                            transform: translate3d(0, 0, 0) translateZ(0);
+                        }
+
+                        25% {
+                            transform: translate3d(4px, 0, 0) translateZ(0);
+                        }
+
+                        50% {
+                            transform: translate3d(-3px, 0, 0) translateZ(0);
+                        }
+
+                        75% {
+                            transform: translate3d(2px, 0, 0) translateZ(0);
+                        }
+
+                        100% {
+                            transform: translate3d(0, 0, 0) translateZ(0);
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+
+
+        .banner_right {
+            position: relative;
+            left: 92px;
+
+            .slick-slide {
+                padding: 200px 0;
+            }
+
+            .banner_image {
+                width: 331px;
+
+                img {
+                    height: 356px;
+                }
+            }
+
+            .price {
+                position: absolute;
+                left: 300px;
+                top: 243px;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 21.573px;
+                    color: #FFFFFF;
+
+                    span {
+                        display: block;
+                        color: #FFFFFF;
+                        margin-top: -49px;
+                    }
+
+                    width: 120px;
+                    height: 114.61px;
+                    line-height: 84.61px;
+                    text-align: center;
+                    background: #EDA415;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 19.5%;
+        bottom: 30px;
+        transform: translateX(-50%);
+
+        li {
+            button {
+                font-size: 0;
+                width: 16px;
+                height: 15px;
+                border: 1px solid #ADADAD;
+                background: transparent;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background: #EDA415;
+        border-color: #EDA415;
+    }
+}
+
+
+
+// ************** Banner Part End **************_____

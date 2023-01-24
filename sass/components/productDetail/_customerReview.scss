@@ -1,0 +1,48 @@
+// ************** customer review Part Start **************_____
+#customer_reviews{
+    padding-bottom: 70px;
+
+    .container{
+        .customer_review{
+            padding: 30px 30px;
+            border: 1px solid #B8B8B8;
+            border-radius: 20px;
+
+            .review{
+                
+                h3{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22.68px;
+                    line-height: 34px;
+                    color: #003F62;
+                }
+
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19.68px;
+                    line-height: 30px;
+                    color: #4F4F4F;
+                    margin-top: 15px;
+                }
+
+                a{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19.68px;
+                    line-height: 30px;
+                    text-decoration-line: underline;
+                    color: #FFFFFF;
+                    padding: 6px 25px;
+                    background: #003F62;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+// ************** customer review Part End **************_____

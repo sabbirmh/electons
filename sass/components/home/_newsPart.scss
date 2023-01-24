@@ -1,0 +1,142 @@
+// ************** News Part Start **************_____
+#news {
+    padding-bottom: 110px;
+
+    .container {
+        .news_left_head {
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25.38px;
+                line-height: 38px;
+                color: #1B5A7D;
+            }
+        }
+
+        .news_right_vew {
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20.38px;
+                line-height: 31px;
+                color: #1B5A7D;
+            }
+        }
+
+        .news_part_slider {
+            .news_part_all_info {
+                .news_part_back {
+                    width: 100%;
+                    height: 300px;
+                    border: 1px solid #C8C8C8;
+                    border-radius: 20px;
+                    padding: 25px 20px;
+
+                    .news_image {
+                        width: 250px;
+
+                        img {
+                            height: 244px;
+                        }
+                    }
+
+                    .news_content {
+                        .date {
+                            width: 130px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            padding: 3px 3px;
+                            border: 1px solid #D4D4D4;
+                            border-radius: 20px;
+                            -webkit-border-radius: 20px;
+                            -moz-border-radius: 20px;
+                            -ms-border-radius: 20px;
+                            -o-border-radius: 20px;
+
+                            p {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20.38px;
+                                color: #1B5A7D;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        h3 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 22.38px;
+                            line-height: 34px;
+                            color: #1B5A7D;
+                            margin-top: 10px;
+
+                            span {
+                                display: block;
+                            }
+
+                        }
+
+                        p {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12.1707px;
+                            line-height: 20px;
+                            color: #003F62;
+                            margin-top: 11px;
+                        }
+
+                        .tech {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .second_row{
+            margin-top: 30px;
+        }
+
+
+        .news_row_slider{
+            .slick-slide{
+                padding: 0 12px;
+            }
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 94%;
+        bottom: -43px;
+        transform: translateX(-50%);
+
+        li {
+            button {
+                font-size: 0;
+                width: 16px;
+                height: 15px;
+                border: 1px solid #ADADAD;
+                background: transparent;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background: #EDA415;
+        border-color: #EDA415;
+    }
+}
+
+// ************** News Part end **************_____

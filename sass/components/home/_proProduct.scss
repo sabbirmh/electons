@@ -1,0 +1,286 @@
+// ************** Populer product Part Start **************_____
+#pro_product {
+    padding-bottom: 70px;
+
+    .container {
+
+        .head {
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 27.38px;
+                line-height: 41px;
+                color: #1B5A7D;
+            }
+        }
+
+        .product_menu {
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 0px 7px;
+                    position: relative;
+                    outline: none;
+                    text-decoration: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    height: 50px;
+                    width: 145px;
+                    opacity: 1;
+                    background-color: #ffffff;
+                    border: 1px solid #316887;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+
+                    a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #316887;
+
+
+                    }
+
+                    &:hover {
+                        animation: rotate 0.7s ease-in-out both;
+
+                        a {
+                            animation: storm 0.7s ease-in-out both;
+                            animation-delay: 0.06s;
+
+                            
+                            color: #ffffff;
+                        }
+                        background: #1B5A7D;;
+                        border: 1px solid #1B5A7D;
+                    }
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+
+                    25% {
+                        transform: rotate(3deg) translate3d(0, 0, 0);
+                    }
+
+                    50% {
+                        transform: rotate(-3deg) translate3d(0, 0, 0);
+                    }
+
+                    75% {
+                        transform: rotate(1deg) translate3d(0, 0, 0);
+                    }
+
+                    100% {
+                        transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+                }
+
+                @keyframes storm {
+                    0% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+
+                    25% {
+                        transform: translate3d(4px, 0, 0) translateZ(0);
+                    }
+
+                    50% {
+                        transform: translate3d(-3px, 0, 0) translateZ(0);
+                    }
+
+                    75% {
+                        transform: translate3d(2px, 0, 0) translateZ(0);
+                    }
+
+                    100% {
+                        transform: translate3d(0, 0, 0) translateZ(0);
+                    }
+                }
+            }
+        }
+
+
+
+
+        .all_popular_product {
+            margin-top: 60px;
+            height: 273.83px;
+            padding: 20px 20px;
+            border: 0.983537px solid #B6B6B6;
+            border-radius: 19.6707px;
+
+
+            .heart_icon {
+                position: relative;
+
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background: #B3D4E5;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+
+                    position: absolute;
+                    left: 182px;
+                    z-index: 9999;
+                }
+            }
+
+
+            .product_size {
+                width: 200px !important;
+            }
+
+            .popular_product_image {
+
+                position: relative;
+                width: 120px;
+                z-index: 1;
+                left: 105px;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+
+                .overley_sec {
+                    margin-left: -10px !important;
+                }
+
+                .overley {
+                    display: flex;
+                    margin-left: -45px;
+                    margin-top: 40px;
+
+                    >a {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13.7366px;
+                        line-height: 24px;
+                        color: #272727;
+                        padding: 10px 20px;
+                        background: #87BCD9;
+                        border-radius: 19.6707px;
+
+                        i {
+                            font-size: 12px;
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            background: #EDA415;
+                            border-radius: 50%;
+                            color: #fff;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            margin-left: 18px;
+                        }
+
+                        .fa-eye {
+                            color: #272727;
+                            background: none;
+                            position: relative;
+                            left: 20px;
+                        }
+                    }
+
+                    .eye {
+                        position: relative;
+
+                        a {
+                            position: absolute;
+                            left: 20px;
+                            padding: 10px 20px;
+                            background: #87BCD9;
+                            border-radius: 19.6707px;
+                            color: #272727;
+
+                        }
+                    }
+
+                    visibility: hidden;
+                }
+
+
+            }
+
+            &:hover {
+                .overley {
+                    visibility: visible;
+                }
+
+                .product_info {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .product_info {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17.0939px;
+            line-height: 26px;
+            color: #003F62;
+            margin-top: -79px;
+
+
+            span {
+                display: block;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17.0939px;
+                line-height: 26px;
+                color: #4A4A4A;
+                margin-top: 15px;
+            }
+
+            ul {
+                margin-top: 5px;
+                display: flex;
+
+                li {
+                    margin: 0 3px;
+
+                    i {
+                        color: #ACACAC;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// ************** Populer product Part End **************_____
